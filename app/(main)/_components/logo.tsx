@@ -6,13 +6,10 @@ export const Logo = () => {
         <div className="hidden md:flex items-center gap-x-2">
             <Image
                 src="/logo.png"
-                height="40"
-                width="40"
+                height="100"
+                width="100"
                 alt="logo"
             />
-            <p className="font-semibold">
-                Brian Ngugi
-            </p>
         </div>
     )
 }
