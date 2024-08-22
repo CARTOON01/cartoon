@@ -72,4 +72,16 @@ body,
   body {
     @apply bg-background text-foreground;
   }
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    font-family: var(--font-archivo), sans-serif;
+    @apply text-foreground;
+  }
+  a {
+    @apply text-foreground;
+  }
 }

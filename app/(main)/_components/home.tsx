@@ -58,7 +58,7 @@ export const HomePage = () => {
                     About Me
                 </h2>
                 <p className="flex from-accent-foreground text-start">
-                I excel at automating security measures, implementing advanced security protocols, 
+                I excel at automating security measures, implementing advanced security protocols 
                 and continuously monitoring for potential vulnerabilities. Additionally, I am proficient in 
                 integrating third-party services to enhance functionality and streamline workflows. 
                 My comprehensive approach ensures the creation of secure, efficient, and scalable infrastructures 
@@ -84,10 +84,10 @@ export const HomePage = () => {
                         Dear Client,
                     </h3>
                     <p className="justify-start font-sans text-start mb-2">
-                    I am committed to enhancing your development processes with robust security, efficient operations, 
-                    and exceptional web design. By automating security measures, implementing advanced protocols, and 
+                    I am committed to enhancing your development processes with robust security, efficient operations 
+                    and exceptional web design. By automating security measures, implementing advanced protocols and 
                     crafting visually appealing, user-friendly websites, I ensure your systems remain secure and effective. 
-                    Let’s work together to achieve your business goals. Hire me to safeguard, streamline, and beautify your projects.
+                    Let’s work together to achieve your business goals. Hire me to safeguard, streamline and beautify your projects.
                     </p>
                     <h2 className="text-start">
                         Sincerely, <br />
