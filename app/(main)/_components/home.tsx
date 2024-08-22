@@ -9,10 +9,10 @@ export const HomePage = () => {
         <div className="max-w-6xl mx-auto space-y-8">
             <div className="flex flex-col md:flex-row gap-8 items-start">
                 <div className="flex-1 space-y-4">
-                <h1 className="text-3xl sm:text-5xl md:text-3xl font-semibold text-start">
+                <h1 className="text-2xl sm:text-3xl md:text-5xl font-semibold text-start">
                     My name is <span className="underline font-serif">Brian Kamau</span>
                 </h1>
-                    <h3 className="text-base sm:text-sm md:text-lg font-small text-start">
+                    <h3 className="text-sm sm:text-base md:text-lg font-small text-start">
                         As a DevSecOps engineer, I specialize in integrating robust security practices into the DevOps pipeline. 
                         With a diverse technical skillset encompassing NextJS, GitHub, MongoDB, MySQL, TailwindCSS, Python, Flask, 
                         JavaScript, NodeJS, and HTML, I excel at automating security measures, implementing advanced protocols, 
