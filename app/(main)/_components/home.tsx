@@ -2,6 +2,7 @@ import { Separator } from "@/components/ui/separator";
 import Image from "next/image";
 import { FaGithub, FaInstagram, FaLinkedinIn } from "react-icons/fa";
 import { FaX } from "react-icons/fa6";
+import ImageGallery from "./portfolio";
 
 export const HomePage = () => {
     return (
@@ -43,7 +44,7 @@ export const HomePage = () => {
                 </div>
                 <div className="flex-1 relative aspect-square md:aspect-auto md:h-full">
                     <Image
-                        src="/me.jpg"
+                        src='https://res.cloudinary.com/dh3g60rue/image/upload/v1724319325/portfolio/me_vlr4a9.jpg'
                         alt="Brian Kamau"
                         layout="fill"
                         objectFit="cover"
@@ -53,7 +54,25 @@ export const HomePage = () => {
             </div>
             <Separator />
             <div>
-
+                <h2 className="flex justify-center font-semibold text-3xl mb-4">
+                    About Me
+                </h2>
+                <p className="flex from-accent-foreground">
+                I excel at automating security measures, implementing advanced security protocols, 
+                and continuously monitoring for potential vulnerabilities. Additionally, I am proficient in 
+                integrating third-party services to enhance functionality and streamline workflows. 
+                My comprehensive approach ensures the creation of secure, efficient, and scalable infrastructures 
+                that support agile and effective software delivery. Committed to protecting organizations from cyber threats, 
+                I strive to enhance security while maintaining the speed and flexibility of modern development practices.
+                </p>
+            </div>
+            <div>
+                <h2 className="flex font-semibold text-3xl justify-center mb-4">
+                    My Portfolio
+                </h2>
+                <div className="flex flex-row sm:flex-row justify-center gap-8 container mx-auto">
+                    <ImageGallery />
+                </div>
             </div>
         </div>
     )

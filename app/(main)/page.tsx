@@ -1,4 +1,4 @@
-import { Footer } from "./_components/footer";
+
 import { Header } from "./_components/header";
 import { HomePage } from "./_components/home";
 
