@@ -1,18 +1,12 @@
 import type { Metadata } from "next";
 import "./globals.css";
-import { Libre_Franklin } from "next/font/google";
-import { Archivo } from "next/font/google";
+import { EB_Garamond } from "next/font/google";
 import { cn } from "@/lib/utils";
 
-const archivo = Archivo({
+const ebGaramond = EB_Garamond({
   subsets: ["latin"],
   display: "swap",
-  variable: "--font-archivo",
-});
-const libre_franklin = Libre_Franklin({
-  subsets: ["latin"],
-  display: "swap",
-  variable: "--font-libre_franklin",
+  variable: "--font-eb-garamond",
 });
 
 export const metadata: Metadata = {
@@ -29,7 +23,7 @@ export default function RootLayout({
     <html lang="en">
       <body className={cn(
           "min-h-screen bg-background antialiased",
-          archivo.variable + " " + libre_franklin.variable,
+          ebGaramond.variable,
         )}>{children}</body>
     </html>
   );

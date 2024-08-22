@@ -6,7 +6,7 @@ import ImageGallery from "./portfolio";
 
 export const HomePage = () => {
     return (
-        <div className="max-w-6xl mx-auto space-y-8">
+        <div className="max-w-6xl mx-auto">
             <div className="flex flex-col md:flex-row gap-8 items-start">
                 <div className="flex-1 space-y-4">
                 <h1 className="text-2xl sm:text-3xl md:text-3xl font-semibold text-start">
@@ -79,7 +79,7 @@ export const HomePage = () => {
                 <h2 className="text-3xl font-semibold justify-center">
                     Message to My Clients
                 </h2>
-                <div>
+                <div className="italic font-semibold">
                     <h3 className="text-start mb-2">
                         Dear Client,
                     </h3>
