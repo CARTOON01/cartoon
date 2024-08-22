@@ -1,4 +1,5 @@
 import { Header } from "./_components/header";
+import { Footer } from "./_components/footer";
 
 const HomeLayout = ({
     children
@@ -6,13 +7,14 @@ const HomeLayout = ({
     children: React.ReactNode;
 }) => {
     return ( 
-        <div className="h-full dark:bg-[#1F1F1F]">
+        <div className="flex flex-col min-h-screen dark:bg-[#1F1F1F]">
             <Header />
-            <main className="h-full pt-40">
+            <main className="flex-grow">
                 {children}
             </main>
+            <Footer />
         </div>
      );
 }
- 
+
 export default HomeLayout;
