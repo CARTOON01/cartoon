@@ -8,7 +8,7 @@ export const HomePage = () => {
     return (
         <div className="max-w-6xl mx-auto">
             <div className="flex flex-col md:flex-row gap-8 items-start">
-                <div className="flex-1 space-y-4">
+                <div className="flex-1 space-y-4 mb-4">
                 <h1 className="text-2xl sm:text-3xl md:text-3xl font-semibold text-start">
                     My name is <span className="underline font-serif">Brian Kamau</span>
                 </h1>
@@ -52,8 +52,8 @@ export const HomePage = () => {
                     />
                 </div>
             </div>
-            <Separator />
-            <div>
+            <Separator className="mb-4"/>
+            <div className="mb-2">
                 <h2 className="flex justify-center font-semibold text-3xl mb-4">
                     About Me
                 </h2>
@@ -70,7 +70,7 @@ export const HomePage = () => {
                 <h2 className="flex font-semibold text-3xl justify-center mb-4">
                     My Portfolio
                 </h2>
-                <div className="flex flex-row sm:flex-row justify-center gap-8 container mx-auto">
+                <div className="flex flex-row sm:flex-row justify-center gap-8 container mx-auto mb-4">
                     <ImageGallery />
                 </div>
             </div>
