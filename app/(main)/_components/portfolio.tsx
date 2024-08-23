@@ -1,5 +1,6 @@
 import React from 'react';
 import Image from 'next/image';
+import { Button } from "@/components/ui/button";
 
 interface ImageCardProps {
   imageSrc: string;
@@ -19,15 +20,20 @@ const ImageCard = ({ imageSrc, title, link }: ImageCardProps) => {
         />
       </div>
       <div className="p-4">
-        <h3 className="font-heading text-xl mb-2">{title}</h3>
-        <a 
-          href={link} 
-          target="_blank" 
-          rel="noopener noreferrer" 
-          className="text-blue-500 hover:text-blue-700 transition-colors duration-300"
+        <h3 className="font-heading text-xl mb-4 font-bold">{title}</h3>
+        <Button 
+          asChild
+          variant="outline"
+          className="w-full"
         >
-          Visit Website
-        </a>
+          <a 
+            href={link} 
+            target="_blank" 
+            rel="noopener noreferrer" 
+          >
+            Visit Website
+          </a>
+        </Button>
       </div>
     </div>
   );
@@ -54,7 +60,6 @@ const ImageGallery = () => {
 
   return (
     <div className="container mx-auto px-4 py-8">
-      <h2 className="font-heading text-3xl mb-6 text-center">My Portfolio</h2>
       <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
         {images.map((image, index) => (
           <ImageCard key={index} imageSrc={image.src} title={image.title} link={image.link} />
