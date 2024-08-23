@@ -7,7 +7,7 @@ import { Button } from "@/components/ui/button";
 
 export const HomePage = () => {
     return (
-        <div className="max-w-6xl mx-auto pt-4 sm:pt-8 md:pt-12 lg:pt-16">
+        <div className="max-w-6xl mx-auto pt-2 sm:pt-4 md:pt-6 lg:pt-8">
             <div className="flex flex-col md:flex-row gap-8 items-start">
                 <div className="flex-1 space-y-4 mb-4">
                 <h1 className="text-2xl sm:text-3xl md:text-3xl font-semibold text-start">
@@ -74,7 +74,7 @@ export const HomePage = () => {
                 <div className="flex flex-row sm:flex-row justify-center gap-8 container mx-auto mb-4">
                     <ImageGallery />
                 </div>
-                <Button variant="link" className="mx-auto">
+                <Button className="mx-auto">
                         View More Items
                     </Button>
             </div>

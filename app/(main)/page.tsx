@@ -7,7 +7,7 @@ const Home = () => {
     <div className="flex flex-col min-h-screen dark:bg-[#1F1F1F]">
       <Analytics />
       <Header />
-      <main className="h-full sm:pt-24">
+      <main className="h-full">
         <div className="flex flex-col items-center justify-center md:justify-start text-center">
           <HomePage />
         </div>
