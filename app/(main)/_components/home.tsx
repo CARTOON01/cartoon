@@ -54,7 +54,7 @@ export const HomePage = () => {
                         and web design to enhance system integrity while meeting modern development demands.
                     </h3>
                     <div>
-                        <h4 className=" font-semibold text-start text-3xl mb-4">
+                        <h4 className=" font-semibold text-start text-3xl lg:mb-4 md:mb-4 sm:mb-2">
                             Connect with Me
                         </h4>
                         <div className="flex justify-start gap-2">
@@ -84,7 +84,7 @@ export const HomePage = () => {
                 </div>
             </div>
             <Separator className="my-8"/>
-            <div className="mb-8">
+            <div className="md:mb-8 lg:mb-8 sm:mb-2">
                 <h2 className="flex justify-center font-semibold text-3xl mb-4">
                     About Me
                 </h2>
@@ -99,7 +99,7 @@ export const HomePage = () => {
             </div>
             <div className="mb-8 py-12 -mx-4 sm:-mx-6 md:-mx-8 lg:-mx-16">
                 <div className="max-w-6xl mx-auto px-4 sm:px-6 md:px-8">
-                    <h2 className="text-3xl font-semibold text-center mb-8 text-white">
+                    <h2 className="text-3xl font-semibold text-center">
                         My Portfolio
                     </h2>
                     <ImageGallery />
