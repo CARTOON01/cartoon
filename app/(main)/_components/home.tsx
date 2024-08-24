@@ -2,11 +2,13 @@
 
 import { Separator } from "@/components/ui/separator";
 import Image from "next/image";
-import { FaGithub, FaInstagram, FaLinkedinIn } from "react-icons/fa";
-import { FaX } from "react-icons/fa6";
+import { FaSquareXTwitter } from "react-icons/fa6";
 import ImageGallery from "./portfolio";
 import { Button } from "@/components/ui/button";
 import { useEffect } from 'react';
+import { CiLinkedin } from "react-icons/ci";
+import { TfiInstagram } from "react-icons/tfi";
+import { VscGithub } from "react-icons/vsc";
 
 export const HomePage = () => {
     const verifyRecaptcha = async () => {
@@ -57,16 +59,16 @@ export const HomePage = () => {
                         </h4>
                         <div className="flex justify-start gap-2">
                             <a href="https://www.linkedin.com/in/brianngugi">
-                                <FaLinkedinIn size="30" color="#0077B5" />
+                                <CiLinkedin size="35" color="#0077B5" />
                             </a>
                             <a href="https://instagram.com/itsngugi_1">
-                                <FaInstagram size="30" color="#E4405F" />
+                                <TfiInstagram size="30" color="#E4405F" />
                             </a>
                             <a href="https://x.com/ItNgugi">
-                                <FaX size="30" color="#000000" />
+                                <FaSquareXTwitter size="30" color="#000000" />
                             </a>
                             <a href="https://github.com/CARTOON01">
-                                <FaGithub size="30" color="#000000" />
+                                <VscGithub size="30" color="#000000" />
                             </a>
                         </div>
                     </div>
