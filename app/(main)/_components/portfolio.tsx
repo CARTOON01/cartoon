@@ -10,7 +10,7 @@ interface ImageCardProps {
 
 const ImageCard = ({ imageSrc, title, link }: ImageCardProps) => {
   return (
-    <div className="bg-white dark:bg-gray-800 rounded-lg overflow-hidden shadow-lg transition-transform duration-300 hover:scale-105">
+    <div className="bg-white dark:bg-gray-800 rounded-lg overflow-hidden shadow-lg transition-transform duration-300 hover:scale-105 border-2 border-dotted border-green-950">
       <div className="relative h-48 sm:h-64">
         <Image
           src={imageSrc}

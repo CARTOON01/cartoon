@@ -1,15 +1,43 @@
+"use client";
+
 import { Separator } from "@/components/ui/separator";
 import Image from "next/image";
 import { FaGithub, FaInstagram, FaLinkedinIn } from "react-icons/fa";
 import { FaX } from "react-icons/fa6";
 import ImageGallery from "./portfolio";
 import { Button } from "@/components/ui/button";
+import { useEffect } from 'react';
 
 export const HomePage = () => {
+    const verifyRecaptcha = async () => {
+        try {
+            const token = await (window as any).grecaptcha.execute('YOUR_SITE_KEY', { action: 'submit' });
+            const response = await fetch('/api/verify-recaptcha', {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json',
+                },
+                body: JSON.stringify({ token }),
+            });
+            const data = await response.json();
+            if (data.success) {
+                console.log('reCAPTCHA verification successful');
+            } else {
+                console.error('reCAPTCHA verification failed');
+            }
+        } catch (error) {
+            console.error('Error verifying reCAPTCHA:', error);
+        }
+    };
+
+    useEffect(() => {
+        verifyRecaptcha();
+    }, []);
+
     return (
         <div className="max-w-6xl mx-auto pt-2 sm:pt-4 md:pt-6 lg:pt-8">
             <div className="flex flex-col md:flex-row gap-8 items-start">
-                <div className="flex-1 space-y-4 mb-4">
+                <div className="flex-1 space-y-4">
                 <h1 className="text-2xl sm:text-3xl md:text-3xl font-semibold text-start">
                     My name is <span className="underline font-serif">Brian Kamau</span>
                 </h1>
@@ -67,16 +95,18 @@ export const HomePage = () => {
                 I strive to enhance security while maintaining the speed and flexibility of modern development practices.
                 </p>
             </div>
-            <div className="mb-8">
-                <h2 className="flex font-semibold text-3xl justify-center mb-4">
-                    My Portfolio
-                </h2>
-                <div className="flex flex-row sm:flex-row justify-center gap-8 container mx-auto mb-4">
+            <div className="mb-8 py-12 -mx-4 sm:-mx-6 md:-mx-8 lg:-mx-16">
+                <div className="max-w-6xl mx-auto px-4 sm:px-6 md:px-8">
+                    <h2 className="text-3xl font-semibold text-center mb-8 text-white">
+                        My Portfolio
+                    </h2>
                     <ImageGallery />
+                    <div className="flex justify-center mt-8">
+                        <Button variant="secondary">
+                            View More Items
+                        </Button>
+                    </div>
                 </div>
-                <Button className="mx-auto">
-                        View More Items
-                    </Button>
             </div>
             <Separator className="my-8"/>
             <div className="mb-8">
@@ -91,7 +121,7 @@ export const HomePage = () => {
                     I am committed to enhancing your development processes with robust security, efficient operations 
                     and exceptional web design. By automating security measures, implementing advanced protocols and 
                     crafting visually appealing, user-friendly websites, I ensure your systems remain secure and effective. 
-                    Let’s work together to achieve your business goals. Hire me to safeguard, streamline and beautify your projects.
+                    Let's work together to achieve your business goals. Hire me to safeguard, streamline and beautify your projects.
                     </p>
                     <h2 className="text-start">
                         Sincerely, <br />
