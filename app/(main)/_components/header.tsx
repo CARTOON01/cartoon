@@ -2,6 +2,7 @@ import { cn } from "@/lib/utils";
 import { Logo } from "./logo";
 import { MenuButton } from "./menu-button";
 import Link from "next/link";
+import { Button } from "@/components/ui/button";
 
 export const Header = () => {
     return (
@@ -12,9 +13,9 @@ export const Header = () => {
                 <div className="flex items-center justify-between h-16">
                     <Logo />
                     <div className="hidden md:flex items-center space-x-4">
-                        <Link href="#" className="text-sm font-medium hover:text-gray-300">About</Link>
-                        <Link href="#" className="text-sm font-medium hover:text-gray-300">Portfolio</Link>
-                        <Link href="#" className="text-sm font-medium hover:text-gray-300">Contact</Link>
+                        <Button variant="link" className="text-sm font-medium hover:text-black">About Me</Button>
+                        <Button variant="link" className="text-sm font-medium hover:text-black">Portfolio</Button>
+                        <Button variant="link" className="text-sm font-medium hover:text-black">Contact</Button>
                     </div>
                     <div className="md:hidden">
                         <MenuButton />

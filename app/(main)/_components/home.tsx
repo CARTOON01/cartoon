@@ -83,7 +83,7 @@ export const HomePage = () => {
                 <h2 className="text-3xl font-semibold justify-center">
                     Message to My Clients
                 </h2>
-                <div className="italic font-semibold">
+                <div className="italic">
                     <h3 className="text-start mb-2">
                         Dear Client,
                     </h3>
@@ -99,6 +99,8 @@ export const HomePage = () => {
                     </h2>
                 </div>
             </div>
+            <Separator className="my-8"/>
+            <p className="italic text-center font-serif">Secure, efficient, and beautifully designed systems are not just goals, they are standards.</p>
         </div>
     )
 }
