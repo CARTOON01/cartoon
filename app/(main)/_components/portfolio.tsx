@@ -23,7 +23,7 @@ const ImageCard = ({ imageSrc, title, link }: ImageCardProps) => {
         <h3 className="font-heading text-xl mb-4 font-bold">{title}</h3>
         <Button 
           asChild
-          variant="outline"
+          variant="custom"
           className="w-full"
         >
           <a 
