@@ -19,7 +19,9 @@ export const Header = () => {
                         <Link href="/portfolio">
                             <Button variant="link" className="text-sm font-medium hover:text-black">Portfolio</Button>
                         </Link>
+                        <Link href="/contact">
                         <Button variant="link" className="text-sm font-medium hover:text-black">Contact</Button>
+                        </Link>
                     </div>
                     <div className="md:hidden">
                         <MenuButton />
