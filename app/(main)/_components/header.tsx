@@ -14,9 +14,11 @@ export const Header = () => {
                     <Logo />
                     <div className="hidden md:flex items-center space-x-4">
                         <Link href="/about">
-                        <Button variant="link" className="text-sm font-medium hover:text-black">About Me</Button>
+                            <Button variant="link" className="text-sm font-medium hover:text-black">About Me</Button>
                         </Link>
-                        <Button variant="link" className="text-sm font-medium hover:text-black">Portfolio</Button>
+                        <Link href="/portfolio">
+                            <Button variant="link" className="text-sm font-medium hover:text-black">Portfolio</Button>
+                        </Link>
                         <Button variant="link" className="text-sm font-medium hover:text-black">Contact</Button>
                     </div>
                     <div className="md:hidden">
