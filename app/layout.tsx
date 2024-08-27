@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import "./globals.css";
 import { EB_Garamond } from "next/font/google";
 import { cn } from "@/lib/utils";
+import { ThemeProvider } from "@/components/theme-provider";
 
 const ebGaramond = EB_Garamond({
   subsets: ["latin"],
@@ -24,7 +25,11 @@ export default function RootLayout({
       <body className={cn(
           "min-h-screen bg-background antialiased",
           ebGaramond.variable,
-        )}>{children}</body>
+        )}>
+          <ThemeProvider>
+            {children}
+          </ThemeProvider>
+          </body>
     </html>
   );
 }

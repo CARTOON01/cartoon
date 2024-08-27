@@ -9,6 +9,7 @@ import { useEffect } from 'react';
 import { CiLinkedin } from "react-icons/ci";
 import { TfiInstagram } from "react-icons/tfi";
 import { VscGithub } from "react-icons/vsc";
+import Link from "next/link";
 
 export const HomePage = () => {
     const verifyRecaptcha = async () => {
@@ -104,19 +105,21 @@ export const HomePage = () => {
                     </h2>
                     <ImageGallery />
                     <div className="flex justify-center mt-8">
-                        <Button variant="secondary">
-                            View More Items
-                        </Button>
+                        <Link href="/portfolio">
+                            <Button variant="secondary">
+                                View More Items
+                            </Button>
+                        </Link>
                     </div>
                 </div>
             </div>
-            <Separator className="my-8"/>
+            <Separator className="my-8 bg-black"/>
             <div className="mb-8">
                 <h2 className="text-3xl font-semibold justify-center">
                     Message to My Clients
                 </h2>
                 <div className="italic">
-                    <h3 className="text-start mb-2">
+                    <h3 className="text-start mb-2 font-semibold">
                         Dear Client,
                     </h3>
                     <p className="justify-start font-sans text-start mb-2">
@@ -125,13 +128,13 @@ export const HomePage = () => {
                     crafting visually appealing, user-friendly websites, I ensure your systems remain secure and effective. 
                     Let's work together to achieve your business goals. Hire me to safeguard, streamline and beautify your projects.
                     </p>
-                    <h2 className="text-start">
+                    <h2 className="text-start font-semibold">
                         Sincerely, <br />
                         Brian Kamau.
                     </h2>
                 </div>
             </div>
-            <Separator className="my-8"/>
+            <Separator className="my-8 bg-black"/>
             <p className="italic text-center font-serif">Secure, efficient, and beautifully designed systems are not just goals, they are standards.</p>
         </div>
     )
