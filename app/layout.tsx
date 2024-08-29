@@ -21,13 +21,15 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
+    <html lang="en" suppressHydrationWarning>
       <body className={cn(
           "min-h-screen bg-background antialiased",
           ebGaramond.variable,
         )}>
           <ThemeProvider>
+            <div className="container mx-auto w-full py-12">
             {children}
+            </div>
           </ThemeProvider>
           </body>
     </html>
