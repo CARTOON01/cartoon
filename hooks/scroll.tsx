@@ -20,3 +20,5 @@ export const useScrolled = (threshold = 10) => {
 
   return scrolled;
 }
+
+export default useScrolled;

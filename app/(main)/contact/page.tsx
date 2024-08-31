@@ -1,10 +1,9 @@
-import { Badge } from "@/components/ui/badge";
-import { Disclosure, DisclosureButton, DisclosurePanel } from "@headlessui/react";
-import { ChevronDownIcon, MailPlusIcon, PhoneCallIcon } from "lucide-react";
+import { MailPlusIcon, PhoneCallIcon } from "lucide-react";
 import { CiLinkedin } from "react-icons/ci";
 import { FaSquareXTwitter } from "react-icons/fa6";
 import { TfiInstagram } from "react-icons/tfi";
 import { VscGithub } from "react-icons/vsc";
+import { contact_form } from "@/components/contact_form";
 
 const Contact = () => {
     return ( 
@@ -43,21 +42,8 @@ const Contact = () => {
                 </div>
             </div>
             <div>
-            <div className="flex justify-center pt-4">
-                <Badge>
-                    FAQS
-                </Badge>
-            </div>
-            <div className="items-center justify-center pt-3">
-                <Disclosure>
-                    <DisclosureButton className="py-2">
-                        What is the best way to reach you?
-                        <ChevronDownIcon className="w-5 group-data-[open]:rotate-180" />
-                    </DisclosureButton>
-                    <DisclosurePanel className="text-gray-500">
-                        The best way to reach me is via email at info@briankamau.com
-                    </DisclosurePanel>
-                </Disclosure>
+            <div>
+                <contact_form />
             </div>
             </div>
         </div>
