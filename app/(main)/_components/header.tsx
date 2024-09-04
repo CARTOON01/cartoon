@@ -24,7 +24,7 @@ export const Header = () => {
                         </Link>
                         <ModeToggle />
                     </div>
-                    <div className="md:hidden flex justify-between items-center ">
+                    <div className="md:hidden flex justify-between items-center">
                         <ModeToggle />
                         <MenuButton />
                     </div>
