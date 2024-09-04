@@ -3,7 +3,6 @@ import { CiLinkedin } from "react-icons/ci";
 import { FaSquareXTwitter } from "react-icons/fa6";
 import { TfiInstagram } from "react-icons/tfi";
 import { VscGithub } from "react-icons/vsc";
-import { contact_form } from "@/components/contact_form";
 
 const Contact = () => {
     return ( 
@@ -40,11 +39,6 @@ const Contact = () => {
                     +254 708 761 578
                 </div>
                 </div>
-            </div>
-            <div>
-            <div>
-                <contact_form />
-            </div>
             </div>
         </div>
      );
