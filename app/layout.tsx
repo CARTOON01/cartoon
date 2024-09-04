@@ -27,8 +27,8 @@ export default function RootLayout({
           ebGaramond.variable,
         )}>
           <ThemeProvider>
-            <div className="container mx-auto w-full py-12">
-            {children}
+            <div className="container mx-auto w-full">
+              {children}
             </div>
           </ThemeProvider>
           </body>

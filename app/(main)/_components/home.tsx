@@ -79,7 +79,7 @@ export const HomePage = () => {
                         src='https://res.cloudinary.com/dh3g60rue/image/upload/v1724319325/portfolio/me_vlr4a9.jpg'
                         alt="Brian Kamau"
                         layout="fill"
-                        objectFit="cover"
+                        objectFit="contain"
                         className="rounded-lg"
                     />
                 </div>

@@ -3,6 +3,7 @@ import { Logo } from "./logo";
 import { MenuButton } from "./menu-button";
 import { Button } from "@/components/ui/button";
 import Link from "next/link";
+import { ModeToggle } from "./mode-toggle";
 
 export const Header = () => {
 
@@ -19,10 +20,12 @@ export const Header = () => {
                             <Button variant="link" className="text-sm font-medium hover:text-black">Portfolio</Button>
                         </Link>
                         <Link href="/contact">
-                        <Button variant="link" className="text-sm font-medium hover:text-black">Contact</Button>
+                            <Button variant="link" className="text-sm font-medium hover:text-black">Contact</Button>
                         </Link>
+                        <ModeToggle />
                     </div>
-                    <div className="md:hidden">
+                    <div className="md:hidden flex justify-between items-center ">
+                        <ModeToggle />
                         <MenuButton />
                     </div>
                 </div>
