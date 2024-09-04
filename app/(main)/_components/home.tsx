@@ -10,6 +10,10 @@ import { CiLinkedin } from "react-icons/ci";
 import { TfiInstagram } from "react-icons/tfi";
 import { VscGithub } from "react-icons/vsc";
 import Link from "next/link";
+import BlurFadeText from "@/components/magicui/blur-fade-text";
+import { DATA } from "@/components/data/resume";
+
+const BLUR_FADE_DELAY = 0.04;
 
 export const HomePage = () => {
     const verifyRecaptcha = async () => {
@@ -41,9 +45,12 @@ export const HomePage = () => {
         <div className="max-w-6xl mx-auto pt-2 sm:pt-4 md:pt-6 lg:pt-8">
             <div className="flex flex-col md:flex-row gap-8 items-start">
                 <div className="flex-1 space-y-4">
-                <h1 className="text-2xl sm:text-3xl md:text-3xl font-semibold text-start">
-                    My name is <span className="underline font-serif">Brian Kamau</span>
-                </h1>
+                <BlurFadeText
+                delay={BLUR_FADE_DELAY}
+                className="text-3xl font-bold tracking-tighter sm:text-5xl xl:text-6xl/none"
+                yOffset={8}
+                text={`Hi, I'm ${DATA.name.split(" ")[0]} 👋`}
+              />
                     <h3 className="text-sm sm:text-base md:text-lg font-small text-start">
                         As a DevSecOps engineer, I specialize in integrating robust security practices into the DevOps pipeline. 
                         With a diverse technical skillset encompassing NextJS, GitHub, MongoDB, MySQL, TailwindCSS, Python, Flask, 
