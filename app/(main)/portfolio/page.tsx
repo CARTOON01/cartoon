@@ -11,10 +11,7 @@ const Portfolio = () => {
             Transforming Ideas into Secure, Beautiful, and Efficient Digital Solutions with Seamless Integration and Unmatched Performance.
             </p>
             <div className="pt-4">
-                <h3 className="flex font-semibold text-3xl justify-center">
-                    My Designs
-                </h3>
-            <ImageGallery />
+                <ImageGallery />
             </div>
             <div>
                 <h3 className="flex justify-center text-3xl font-semibold pb-4">
