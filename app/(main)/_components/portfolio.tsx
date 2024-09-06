@@ -1,76 +1,52 @@
-import React from 'react';
-import Image from 'next/image';
-import { Button } from "@/components/ui/button";
+import { DATA } from "@/components/data/resume"
+import BlurFade from "@/components/magicui/blur-fade"
+import { ProjectCard } from "@/components/project-card";
 
-interface ImageCardProps {
-  imageSrc: string;
-  title: string;
-  link: string;
+const BLUR_FADE_DELAY = 0.04;
+
+const ImageCard = () => {
+  return ( 
+    <div className="space-y-12 w-full">
+      <BlurFade delay={BLUR_FADE_DELAY * 11}>
+            <div className="flex flex-col items-center justify-center space-y-4 text-center">
+              <div className="space-y-2">
+                <div className="inline-block rounded-lg bg-foreground text-background px-3 py-1 text-sm">
+                  My Projects
+                </div>
+                <h2 className="text-3xl font-bold tracking-tighter sm:text-5xl">
+                  Check out my latest work
+                </h2>
+                <p className="text-muted-foreground md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed">
+                  I&apos;ve worked on a variety of projects, from simple
+                  websites to complex web applications. Here are a few of my
+                  favorites.
+                </p>
+              </div>
+            </div>
+          </BlurFade>
+    
+      <div className="grid grid-cols-1 gap-3 sm:grid-cols-2 max-w-[800px] mx-auto">
+        {DATA.projects.map((project, id) => (
+              <BlurFade
+                key={project.title}
+                delay={BLUR_FADE_DELAY * 12 + id * 0.05}
+              >
+                <ProjectCard
+                  href={project.href}
+                  key={project.title}
+                  title={project.title}
+                  description={project.description}
+                  dates={project.dates}
+                  tags={project.technologies}
+                  image={project.image}
+                  video={project.video}
+                  links={project.links}
+                />
+              </BlurFade>
+            ))}
+    </div>
+    </div>
+   );
 }
-
-const ImageCard = ({ 
-  imageSrc,
-  title, 
-  link 
-}: ImageCardProps) => {
-  return (
-    <div className="bg-white dark:bg-gray-800 rounded-lg overflow-hidden shadow-lg transition-transform duration-300 hover:scale-105 border-2 border-dotted border-green-950">
-      <div className="relative h-48 sm:h-64">
-        <Image
-          src={imageSrc}
-          alt={title}
-          layout="fill"
-          objectFit="cover"
-        />
-      </div>
-      <div className="p-4">
-        <h3 className="font-heading text-xl mb-4 font-bold">{title}</h3>
-        <Button 
-          asChild
-          variant="custom"
-          className="w-full"
-        >
-          <a 
-            href={link} 
-            target="_blank" 
-            rel="noopener noreferrer" 
-          >
-            Visit Website
-          </a>
-        </Button>
-      </div>
-    </div>
-  );
-};
-
-const ImageGallery = () => {
-  const images = [
-    {
-      src: 'https://res.cloudinary.com/dh3g60rue/image/upload/v1724319319/portfolio/church_yjhatg.png',
-      title: 'DC Website',
-      link: 'https://dcriruta.org',
-    },
-    {
-      src: 'https://res.cloudinary.com/dh3g60rue/image/upload/v1724319318/portfolio/law_me3iaf.png',
-      title: 'Law Firm',
-      link: 'https://law.briankamau.com',
-    },
-    {
-      src: 'https://res.cloudinary.com/dh3g60rue/image/upload/v1724319320/portfolio/School_rdzunt.png',
-      title: 'School Website',
-      link: 'https://school.briankamau.com',
-    },
-  ];
-
-  return (
-    <div className="container mx-auto px-4 py-8">
-      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
-        {images.map((image, index) => (
-          <ImageCard key={index} imageSrc={image.src} title={image.title} link={image.link} />
-        ))}
-      </div>
-    </div>
-  );
-};
-
-export default ImageGallery;
+ 
+export default ImageCard;

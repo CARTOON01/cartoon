@@ -92,9 +92,9 @@ export const DATA = {
           icon: <Icons.globe className="size-3" />,
         },
       ],
-      image: "",
+      image: "https://cartoon09.s3.eu-north-1.amazonaws.com/church.png",
       video:
-        "https://pub-83c5db439b40468498f97946200806f7.r2.dev/chat-collect.mp4",
+        "",
     },
     {
       title: "Law Firm",
@@ -119,8 +119,8 @@ export const DATA = {
           icon: <Icons.globe className="size-3" />,
         },
       ],
-      image: "",
-      video: "https://cdn.magicui.design/bento-grid.mp4",
+      image: "https://cartoon09.s3.eu-north-1.amazonaws.com/law.png",
+      video: "",
     },
     {
       title: "School Website",
@@ -145,8 +145,8 @@ export const DATA = {
           icon: <Icons.globe className="size-3" />,
         },
       ],
-      image: "",
-      video: "https://cdn.llm.report/openai-demo.mp4",
+      image: "https://cartoon09.s3.eu-north-1.amazonaws.com/School.png",
+      video: "",
     },
     {
       title: "Ideanest",
@@ -175,9 +175,9 @@ export const DATA = {
           icon: <Icons.github className="size-3" />,
         }
       ],
-      image: "",
+      image: "https://cartoon09.s3.eu-north-1.amazonaws.com/idea.png",
       video:
-        "https://pub-83c5db439b40468498f97946200806f7.r2.dev/automatic-chat.mp4",
+        "",
     },
   ],
   hackathons: [

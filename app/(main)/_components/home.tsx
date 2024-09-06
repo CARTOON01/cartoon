@@ -47,9 +47,9 @@ export const HomePage = () => {
                 <div className="flex-1 space-y-4">
                 <BlurFadeText
                 delay={BLUR_FADE_DELAY}
-                className="text-3xl font-bold tracking-tighter sm:text-5xl xl:text-6xl/none"
+                className="text-2xl font-bold tracking-tighter sm:text-5xl xl:text-6xl/none"
                 yOffset={8}
-                text={`Hi, I'm ${DATA.name.split(" ")[0]} 👋`}
+                text={`Hi, I'm Brian Kamau`}
               />
                     <h3 className="text-sm sm:text-base md:text-lg font-small text-start">
                         As a DevSecOps engineer, I specialize in integrating robust security practices into the DevOps pipeline. 
@@ -107,9 +107,6 @@ export const HomePage = () => {
             </div>
             <div className="mb-8 py-12 -mx-4 sm:-mx-6 md:-mx-8 lg:-mx-16">
                 <div className="max-w-6xl mx-auto px-4 sm:px-6 md:px-8">
-                    <h2 className="text-3xl font-semibold text-center">
-                        My Portfolio
-                    </h2>
                     <ImageGallery />
                     <div className="flex justify-center mt-8">
                         <Link href="/portfolio">
