@@ -1,5 +1,5 @@
 import { Separator } from "@/components/ui/separator";
-import ImageGallery from "../_components/portfolio";
+import ImageGallery from "./portfolio";
 
 const Portfolio = () => {
     return ( 

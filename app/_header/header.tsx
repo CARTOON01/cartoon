@@ -1,7 +1,7 @@
 "use client";
 
 import React, { useEffect, useState } from "react";
-import { Logo } from "./logo";
+import { Logo } from "../logo";
 import { MenuButton } from "./menu-button";
 import { Button } from "@/components/ui/button";
 import Link from "next/link";

@@ -3,7 +3,7 @@
 import { Separator } from "@/components/ui/separator";
 import Image from "next/image";
 import { FaSquareXTwitter } from "react-icons/fa6";
-import ImageGallery from "./portfolio";
+import ImageGallery from "./portfolio/portfolio";
 import { Button } from "@/components/ui/button";
 import { useEffect } from 'react';
 import { CiLinkedin } from "react-icons/ci";

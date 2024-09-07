@@ -1,5 +1,5 @@
-import { Footer } from "./_components/footer";
-import { Header } from "./_components/header";
+import { Footer } from "../footer";
+import { Header } from "../_header/header";
 
 const HomeLayout = ({
     children

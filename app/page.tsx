@@ -1,4 +1,4 @@
-import { HomePage } from "./_components/home";
+import { HomePage } from "./home";
 import { Analytics } from "@vercel/analytics/react"
 
 const Home = () => {
