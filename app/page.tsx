@@ -1,3 +1,5 @@
+import { Header } from "./_header/header";
+import { Footer } from "./footer";
 import { HomePage } from "./home";
 import { Analytics } from "@vercel/analytics/react"
 
@@ -7,7 +9,9 @@ const Home = () => {
       <Analytics />
         <main className="h-full">
           <div className="flex flex-col items-center justify-center md:justify-start text-center">
+            <Header />
             <HomePage />
+            <Footer />
           </div>
         </main>
     </div>
