@@ -3,6 +3,8 @@ import "./globals.css";
 import { EB_Garamond } from "next/font/google";
 import { cn } from "@/lib/utils";
 import { ThemeProvider } from "@/components/theme-provider";
+import { Header } from "./_header/header";
+import { Footer } from "./footer";
 
 const ebGaramond = EB_Garamond({
   subsets: ["latin"],
@@ -27,8 +29,10 @@ export default function RootLayout({
           ebGaramond.variable,
         )}>
           <ThemeProvider>
-            <div className="container mx-auto w-full">
+            <div className="mx-auto w-full">
+              <Header />
               {children}
+              <Footer />
             </div>
           </ThemeProvider>
           </body>

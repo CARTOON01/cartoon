@@ -47,7 +47,7 @@ export const HomePage = () => {
                 <div className="flex-1 space-y-4">
                 <BlurFadeText
                 delay={BLUR_FADE_DELAY}
-                className="text-2xl font-bold tracking-tighter sm:text-5xl xl:text-6xl/none"
+                className="text-2xl font-bold tracking-tighter sm:text-5xl xl:text-6xl/none pt-12 sm:pt-10 md:pt-8 lg:pt-12"
                 yOffset={8}
                 text={`Hi, I'm Brian Kamau`}
               />
